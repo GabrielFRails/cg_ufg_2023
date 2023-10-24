@@ -1,6 +1,6 @@
 # Computação Gráfica - UFG 2023.2
 
-Copyright (c) Universidade Federal de Goiás
+Copyright (c) Universidade Federal de Goiás \
 Copyright (c) 2023 Gabriel Freitas gabriel.estudy.reis@gmail.com
 
 ## Install requirements
@@ -23,5 +23,5 @@ if the command don't work, try to run in "sudo su" terminal
 
 ### Running our code
 
-Each directory have a Makefile with targets to make your life easier, 
+Each directory have a Makefile with targets to make your life easier, \
 i highly recommend you to read, enjoy, and have fun.
