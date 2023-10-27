@@ -9,7 +9,7 @@ typedef struct {
 Ponto verticesOriginal[] = {{100.0, 100.0}, {200.0, 100.0}, {150.0, 200.0}};
 Ponto verticesRotacionados[3]; // Armazenará os vértices rotacionados
 
-float angulo = 50.0; // Ângulo de rotação em graus
+float angulo = 30.0; // Ângulo de rotação em graus
 
 void desenhaTriangulo() {
 	glBegin(GL_TRIANGLES);
@@ -20,7 +20,7 @@ void desenhaTriangulo() {
 }
 
 void rotacionaTriangulo() {
-	float radianos = angulo * (M_PI / 180.0); // Converte o ângulo para radianos
+	float radianos = (angulo * M_PI) / 180.0; // Converte o ângulo para radianos
 	float cosAngulo = cos(radianos);
 	float sinAngulo = sin(radianos);
 
