@@ -9,7 +9,7 @@ Ponto verticesOriginal[] = {{100.0, 100.0}, {200.0, 100.0}, {150.0, 200.0}};
 Ponto verticesTransladados[3]; // Armazenará os vértices transladados
 
 float tx = 50.0; // Translação em X
-float ty = 30.0; // Translação em Y
+float ty = 100.0; // Translação em Y
 
 void desenhaTriangulo() {
 	glBegin(GL_TRIANGLES);
