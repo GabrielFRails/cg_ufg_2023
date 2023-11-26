@@ -36,13 +36,18 @@ for i in range(3, len(points) + 1):
     plt.grid(True)
     plt.pause(1)  # Pause to visualize each point insertion
 
-# Step 3: Final Delaunay triangulation
+# Step 3: Final Delaunay triangulation with convex hull
 plt.subplot(133)
 plt.plot(points[:, 0], points[:, 1], 'o', markersize=8)
 tri = Delaunay(points)
 for simp in tri.simplices:
     plt.plot(points[simp, 0], points[simp, 1], 'k-')
-plt.title('Step 3: Final Delaunay Triangulation')
+    
+# Plotting the convex hull
+for edge in tri.convex_hull:
+    plt.plot(points[edge, 0], points[edge, 1], 'r--')
+    
+plt.title('Step 3: Final Delaunay Triangulation with Convex Hull')
 plt.xlabel('X-axis')
 plt.ylabel('Y-axis')
 plt.axis('equal')
